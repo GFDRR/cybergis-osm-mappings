@@ -13,7 +13,13 @@
       },
       "fields":{
         "geom":{"name":"geom","type":"POLYGON"},
+        "name":{"name":"name", "type":"STRING"},
         "building":{"name":"building", "type":"STRING"},
+        "building_structure": {"name":"building_structure", "type":"STRING"},
+        "building_levels": {"name":"building_levels", "type":"INT"},
+        "building_use": {"name":"building_use", "type":"STRING"},
+        "tourism":{"name":"tourism", "type":"STRING"},
+        "amenity":{"name":"amenity", "type":"STRING"},
         "status": {"name":"status", "type":"STRING"},
         "photos": {"name":"media", "type":"STRING"},
         "aeroway":{"name":"aeroway", "type":"STRING"}
