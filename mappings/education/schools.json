@@ -3,7 +3,7 @@
     {
       "name":"osm_schools_points",
       "filter":{
-        "amenity":["school","university"]
+        "amenity":["school","university","college","kindergarten"]
       },
       "fields":
       {
@@ -18,7 +18,7 @@
     {
       "name":"osm_schools_areas",
       "filter":{
-        "amenity":["school","university"]
+        "amenity":["school","university","college","kindergarten"]
       },
       "fields":
       {
@@ -27,7 +27,25 @@
         "photos": {"name":"media", "type":"STRING"},
         "name":{"name":"name", "type":"STRING"},
         "wikipedia":{"name":"operator", "type":"STRING"},
-        "website":{"name":"website", "type":"STRING"}
+        "website":{"name":"website", "type":"STRING"},
+        "isced:level":{"name":"isced_level", "type":"STRING"},
+        "personnel:count":{"name":"personnel_count", "type":"STRING"},
+        "student:count":{"name":"student_count", "type":"STRING"},
+        "building_count":{"name":"building_count","type":"STRING"}
+        "building:structure":{"name":"building_structure","type":"STRING"}
+        "floor:material":{"name":"floor_material","type":"STRING"}
+        "roof:material":{"name":"roof_material","type":"STRING"}
+        "building:ownership":{"name":"building_ownership","type":"STRING"}
+        "building:adjacency":{"name":"building_adjacency","type":"STRING"}
+        "shape:plan":{"name":"shape_plan","type":"STRING"}
+        "shape:elevation":{"name":"shape_elevation","type":"STRING"}
+        "physical_condition":{"name":"physical_condition","type":"STRING"}
+        "seismic_resistance":{"name":"seismic_resistance","type":"STRING"}
+        "building:overhang":{"name":"building_overhang","type":"STRING"}
+        "building:softstorey":{"name":"building_softstorey","type":"STRING"}
+        "building:bay:x":{"name":"building_bay_x","type":"STRING"}
+        "building:ownership":{"name":"building_bay_y","type":"STRING"}
+        "column:size":{"name":"column_size","type":"STRING"}
       }
     }
   ]
