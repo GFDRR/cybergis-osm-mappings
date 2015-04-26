@@ -3,7 +3,7 @@
     {
       "name":"osm_medical_centers",
       "filter":{
-        "amenity":["hospital","doctor","doctors","clinic"]
+        "amenity":["hospital","doctor","doctors","clinic","dentist","health_post"]
       },
       "fields":{
         "geom":{"name":"geom","type":"POINT"},
@@ -12,9 +12,29 @@
         "name":{"name":"name_alias","type":"STRING"},
         "operational_status":{"name": "status","type":"STRING"},
         "operator_type":{"name": "op_type","type":"STRING"},
-        "capacity:beds":{"name":"beds", "type":"STRING"},
         "health_facility_type":{"name":"facility_type", "type":"STRING"},
         "designation":{"name":"designation", "type":"STRING"}
+        "capacity:beds":{"name":"beds", "type":"STRING"},
+        "opd:patients:count":{"name":"opd_patients_count","type":"STRING"}
+        "facility:icu":{"name":"icu","type":"STRING"}
+        "facility:operating_theatre":{"name":"operating_theatre","type":"STRING"}
+        "facility:ventilator":{"name":"ventilator","type":"STRING"}
+        "facility:x-ray":{"name":"x-ray","type":"STRING"}
+        "building_count":{"name":"building_count","type":"STRING"}
+        "building:structure":{"name":"building_structure","type":"STRING"}
+        "floor:material":{"name":"floor_material","type":"STRING"}
+        "roof:material":{"name":"roof_material","type":"STRING"}
+        "building:ownership":{"name":"building_ownership","type":"STRING"}
+        "building:adjacency":{"name":"building_adjacency","type":"STRING"}
+        "shape:plan":{"name":"shape_plan","type":"STRING"}
+        "shape:elevation":{"name":"shape_elevation","type":"STRING"}
+        "physical_condition":{"name":"physical_condition","type":"STRING"}
+        "seismic_resistance":{"name":"seismic_resistance","type":"STRING"}
+        "building:overhang":{"name":"building_overhang","type":"STRING"}
+        "building:softstorey":{"name":"building_softstorey","type":"STRING"}
+        "building:bay:x":{"name":"building_bay_x","type":"STRING"}
+        "building:ownership":{"name":"building_bay_y","type":"STRING"}
+        "column:size":{"name":"column_size","type":"STRING"}
       }
     }
   ]
